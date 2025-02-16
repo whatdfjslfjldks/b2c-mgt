@@ -1,5 +1,5 @@
 import Character3 from "@/assets/images/characters/character_3.png";
-import { Iconify } from "@/components/icon";
+// import { Iconify } from "@/components/icon";
 import { useUserInfo } from "@/store/userStore";
 import { themeVars } from "@/theme/theme.css";
 import { Col, Row } from "antd";
@@ -12,16 +12,16 @@ export default function BannerCard() {
 	return (
 		<Row className="!mx-0 rounded-2xl p-7" gutter={[16, 16]} justify="space-between" style={{ background: bg }}>
 			<Col span={24} md={12} xl={16} className="flex-1 text-center md:text-left">
-				<div className="mt-4 text-lg font-semibold md:text-xl" style={{ color: themeVars.colors.palette.primary.dark }}>
-					<h4>Welcome back 👋 </h4>
+				<div className="mt-4 text-[18px] font-semibold md:text-[24px]" style={{ color: themeVars.colors.palette.primary.dark }}>
+					<h4>欢迎回来 👋 </h4>
 					<h4>{username}</h4>
 				</div>
 				<div
 					style={{ color: themeVars.colors.palette.primary.dark }}
-					className="mx-auto mb-6 mt-4 max-w-sm text-sm opacity-80 md:mx-0"
+					className="mx-auto mb-6 mt-4 max-w-sm text-[14px] opacity-80 md:mx-0"
 				>
-					Welcome to join the Discord channel to discuss everything about PAT, or you can visite my blog:
-					<div>
+					欢迎来到b2c电商平台后台管理系统
+					{/* <div>
 						<a
 							href="https://blog.slashspaces.com"
 							target="_blank"
@@ -31,9 +31,9 @@ export default function BannerCard() {
 						>
 							👉 https://blog.slashspaces.com
 						</a>
-					</div>
+					</div> */}
 				</div>
-				<button
+				{/* <button
 					type="button"
 					className="font-mediumtext-black m-auto flex items-center justify-center rounded-lg px-2 py-1 shadow-none md:m-0"
 					style={{ backgroundColor: themeVars.colors.palette.primary.default, color: themeVars.colors.common.white }}
@@ -41,7 +41,7 @@ export default function BannerCard() {
 				>
 					<Iconify icon="carbon:logo-discord" size={24} />
 					<span className="ml-2 font-black">Join Discord</span>
-				</button>
+				</button> */}
 			</Col>
 
 			<Col

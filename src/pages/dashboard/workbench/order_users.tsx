@@ -2,25 +2,25 @@ import { Iconify } from "@/components/icon";
 import { themeVars } from "@/theme/theme.css";
 import { Progress } from "antd";
 
-export function Conversion() {
+export function Orders() {
 	return (
 		<Basic
-			percent={48}
-			title="38,566"
-			subtitle="Conversion"
-			iconify="tabler:user-filled"
+			percent={25}
+			title="10,000"
+			subtitle="一万成交订单数目标"
+			iconify="mdi:cart"
 			bg={themeVars.colors.palette.primary.default}
 			strokeColor={themeVars.colors.palette.primary.light}
 		/>
 	);
 }
-export function Applications() {
+export function Users() {
 	return (
 		<Basic
 			percent={75}
-			title="45,566"
-			subtitle="Applications"
-			iconify="ic:round-email"
+			title="10,000"
+			subtitle="一万注册用户数目标"
+			iconify="tabler:user-filled"
 			bg={themeVars.colors.palette.info.default}
 			strokeColor={themeVars.colors.palette.info.light}
 		/>

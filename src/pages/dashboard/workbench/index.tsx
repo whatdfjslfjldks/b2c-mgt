@@ -2,8 +2,8 @@ import { Col, Row, Space } from "antd";
 
 import AreaDownload from "./area-download";
 import BannerCard from "./banner-card";
-import { Applications, Conversion } from "./conversion_applications";
-import CurrentDownload from "./current-download";
+import { Orders, Users } from "./order_users";
+import CurrentOrderStatus from "./current-orderStatus";
 import NewInvoice from "./new-invoice";
 import TopAuthor from "./top-authors";
 import TopInstalled from "./top-installed";
@@ -19,8 +19,8 @@ function Workbench() {
 				</Col>
 				<Col span={24} lg={8}>
 					<Space direction="vertical" size="large" className="h-full w-full justify-center">
-						<Conversion />
-						<Applications />
+						<Orders />
+						<Users />
 					</Space>
 				</Col>
 			</Row>
@@ -28,7 +28,7 @@ function Workbench() {
 			<Row gutter={[16, 16]} className="mt-4" justify="center">
 				<Col span={24} md={8}>
 					<TotalCard
-						title="Total Active Users"
+						title="每日活跃用户数"
 						increase
 						count="18,765"
 						percent="2.6%"
@@ -38,7 +38,7 @@ function Workbench() {
 
 				<Col span={24} md={8}>
 					<TotalCard
-						title="Total Installed"
+						title="每日下单数"
 						increase
 						count="4,876"
 						percent="0.2%"
@@ -48,7 +48,7 @@ function Workbench() {
 
 				<Col span={24} md={8}>
 					<TotalCard
-						title="Total Downloads"
+						title="每日成交订单数"
 						increase={false}
 						count="678"
 						percent="0.1%"
@@ -59,7 +59,7 @@ function Workbench() {
 
 			<Row gutter={[16, 16]} className="mt-4" justify="center">
 				<Col span={24} md={12} lg={8}>
-					<CurrentDownload />
+					<CurrentOrderStatus />
 				</Col>
 				<Col span={24} md={12} lg={16}>
 					<AreaDownload />

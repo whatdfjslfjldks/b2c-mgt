@@ -8,7 +8,7 @@ export default function CurrentDownload() {
 	return (
 		<Card className="flex-col">
 			<header className="self-start">
-				<Typography.Title level={5}>Current Download</Typography.Title>
+				<Typography.Title level={5}>订单状态</Typography.Title>
 			</header>
 			<main>
 				<ChartDonut />
@@ -20,7 +20,7 @@ export default function CurrentDownload() {
 const series = [44, 55, 13, 43];
 function ChartDonut() {
 	const chartOptions = useChart({
-		labels: ["Mac", "Window", "IOS", "Android"],
+		labels: ["未支付", "已支付", "已发货", "已签收"],
 		stroke: {
 			show: false,
 		},
@@ -40,7 +40,9 @@ function ChartDonut() {
 					size: "90%",
 					labels: {
 						total: {
-							fontSize: "12px",
+							show: true,
+							label: "总计",
+							fontSize: "14px",
 						},
 						value: {
 							fontSize: "18px",
